@@ -76,7 +76,7 @@ class Chat extends Component{
             conversation:[...this.state.conversation,msg],
         });
 
-        fetch('http://localhost:5000/chat',{
+        fetch('https://mini-chat-app.herokuapp.com/chat',{
             method:'POST',
             headers : {'Content-Type':'application/json'},
             body : JSON.stringify({
